@@ -44,7 +44,7 @@ export default function RootLayout({
               </aside>
               <div className="flex flex-col flex-1">
                 <Navbar />
-                <div className="flex-1 bg-card px-8 py-4">
+                <div className="flex-1 bg-card p-4 lg:px-8 lg:py-4">
                   {children}
                 </div>
               </div>

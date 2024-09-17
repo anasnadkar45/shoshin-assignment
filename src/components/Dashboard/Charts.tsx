@@ -4,7 +4,6 @@ import React from 'react'
 import Chart1 from '../../app/public/Group 4.svg'
 import Chart2 from '../../app/public/Group 5.svg'
 import { useTheme } from 'next-themes';
-import { Button } from '../ui/button';
 
 interface chartsDataProps {
     data: {

@@ -4,11 +4,10 @@ import Link from "next/link"
 import Logo from '../../app/public/icons/Group 2770.svg'
 import Image from "next/image"
 import { useState } from "react"
-import { ArrowLeft, ArrowRight, Files, UserPlus } from "lucide-react"
-import { usePathname } from "next/navigation"
+import { ArrowLeft, ArrowRight, Building, Calendar, UserPlus, Users2 } from "lucide-react"
 import { DashboardIcon } from "@radix-ui/react-icons"
 
-const NavLinks = [
+export const NavLinks = [
     {
         id: 1,
         href: '/',
@@ -24,8 +23,20 @@ const NavLinks = [
     {
         id: 3,
         href: '/',
-        title: 'Collections',
-        icon: Files,
+        title: 'Schedule',
+        icon: Calendar,
+    },
+    {
+        id: 4,
+        href: '/',
+        title: 'Employee',
+        icon: Users2,
+    },
+    {
+        id: 5,
+        href: '/',
+        title: 'Department',
+        icon: Building,
     },
 ]
 

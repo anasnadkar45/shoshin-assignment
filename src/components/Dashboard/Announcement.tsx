@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { ChevronDown, MoreHorizontal } from "lucide-react"
 import { Input } from "@/components/ui/input"
-import { title } from 'process'
 import { AnnouncementsData } from '@/data/data'
 
 
