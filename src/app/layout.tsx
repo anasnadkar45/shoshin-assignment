@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Sidebar from "@/components/globals/Sidebar";
+import Navbar from "@/components/globals/Navbar";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +31,26 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="custom-scrollbar scroll-smooth">
+            <div className="h-screen w-full flex">
+              <aside className="h-[100vh] md:block">
+                <Sidebar />
+              </aside>
+              <div className="flex flex-col flex-1">
+                <Navbar />
+                <div className="flex-1 bg-card px-8 py-4">
+                  {children}
+                </div>
+              </div>
+            </div>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
